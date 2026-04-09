@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 overflow-x-hidden">
 
     <div class="min-h-screen flex flex-col">
 
@@ -17,7 +17,70 @@
             <h2 class="text-white">Начало</h2>
         </div>
 
-        <div class="flex flex-1">
+
+        <div class="block sm:hidden flex gap-5 p-2 pt-5 bg-slate-700 overflow-x-auto">
+            <h1>KM3</h1>
+            <h1>KM3</h1>
+            <h1>KM1</h1>
+            <h1>ЖЖМ</h1>
+            <h1>ЖЖМ</h1>
+            <h1>Тәр</h1>
+            <h1>KM3</h1>
+            <h1>KM3</h1>
+        </div>
+
+
+        <div class="grid">
+            <div class="block sm:hidden">
+                <div class="grid grid-cols-2 grid-rows-9 bg-slate-500 pt-10">
+                    <div
+                        class="class bg-slate-400 col-start-1 col-span-2 row-start-1 row-span-1 h-[80px] flex p-3 gap-3">
+                        <img src="./message.png" class="w-9 h-7">Messages
+                    </div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./bookopacity.png"
+                            class="w-9 h-7">Timetable</div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./book2.png"
+                            class="w-9 h-7">
+                        My
+                        courses</div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./opacitymarks.png"
+                            class="w-9 h-7"> Grades
+                    </div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./clock.png"
+                            class="w-9 h-7">
+                        HW /
+                        exams</div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./bag.png"
+                            class="w-9 h-7">
+                        Curriculum</div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./upli.png"
+                            class="w-9 h-7">
+                        Results
+                    </div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./atten.png"
+                            class="w-9 h-7">Attendance</div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./money.png"
+                            class="w-9 h-7">Payment
+                    </div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./replace.png"
+                            class="w-9 h-7">
+                        Substitions</div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./fork.png"
+                            class="w-9 h-7">Canteen
+                        menu</div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./image (1).png"
+                            class="w-9 h-7">Photos
+                    </div>
+                    <div class="class bg-slate-400 w-[235px] h-[80px] flex p-3 gap-3"> <img src="./galochka.png"
+                            class="w-9 h-7">Registration</div>
+                    <div class="class bg-slate-400  w-[235px] h-[80px] flex p-3 gap-3"> <img src="./2messages.png"
+                            class="w-9 h-7">Chat
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden sm:flex sm:flex-1">
 
             <div class="bg-gray-400 w-[220px] p-5 flex flex-col gap-4">
                 <p>Введение</p>
@@ -34,7 +97,7 @@
             <div class="flex-1 p-3">
                 <h2 class="text-xl font-bold ">МОЕ РАСПИСАНИЕ</h2>
 
-                <div class="flex justify-center items-center w-[180px] h-[50px] rounded-xl ml-150">
+                <div class="sm:flex sm:justify-center sm:items-center sm;w-[180px] sm:h-[50px] rounded-xl ">
                     <h1 class="font-bold text-3xl">2F - 4 - EE</h1>
                 </div>
                 <div class="grid">
@@ -91,9 +154,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
+    </div>
 
     </div>
 
